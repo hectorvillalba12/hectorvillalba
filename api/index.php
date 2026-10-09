@@ -10,7 +10,7 @@
     <title>Mi Portafolio | Desarrollador Backend & Data Analyst</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
 
@@ -206,7 +206,7 @@
                         </div>
                     <?php endif; ?>
 
-                    <form action="/dev/contact.php" method="POST" class="contact-form" id="contactForm" novalidate>
+                    <form action="/contact" method="POST" class="contact-form" id="contactForm" novalidate>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label">Nombre *</label>
@@ -255,6 +255,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
