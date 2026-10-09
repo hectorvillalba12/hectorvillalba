@@ -1,0 +1,200 @@
+/* ===== Portfolio - Estilos personalizados ===== */
+
+:root {
+    --bg-dark: #0d1117;
+    --bg-card: #161b22;
+    --bg-section: #11161d;
+    --accent: #2dd4bf;
+    --accent-hover: #5eead4;
+    --text-muted: #8b949e;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #c9d1d9;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ===== Utilidades ===== */
+.accent, .text-accent { color: var(--accent); }
+.text-muted { color: var(--text-muted) !important; }
+.text-code { font-family: 'Courier New', monospace; color: var(--accent); font-size: 1.1rem; }
+.text-muted-hero { color: #9da7b3; }
+
+.btn-accent {
+    background-color: var(--accent);
+    color: #0d1117;
+    font-weight: 600;
+    border: none;
+}
+.btn-accent:hover { background-color: var(--accent-hover); color: #0d1117; }
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #21262d;
+    padding: 1rem 0;
+}
+.navbar .nav-link { color: #c9d1d9; margin-left: 1rem; transition: color .2s; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+.navbar-brand { color: var(--accent) !important; font-size: 1.3rem; }
+
+/* ===== Hero ===== */
+.hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(45, 212, 191, 0.08), transparent 40%),
+        var(--bg-dark);
+}
+.hero h1 { color: #fff; }
+.typing::after {
+    content: '|';
+    animation: blink 0.8s infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.hero-code-card {
+    background: var(--bg-card);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+    text-align: left;
+}
+.hero-code-card pre {
+    margin: 0;
+    color: var(--accent);
+    font-size: .95rem;
+}
+
+/* ===== Secciones ===== */
+.section { padding: 100px 0; }
+.section-dark { background-color: var(--bg-section); }
+
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+/* ===== Sobre mí ===== */
+.avatar-badge i { font-size: 9rem; color: var(--accent); }
+.stats h3 { font-weight: 800; font-size: 2.5rem; }
+
+/* ===== Tecnologías ===== */
+.tech-card {
+    background: var(--bg-card);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.8rem;
+    height: 100%;
+    transition: transform .25s, border-color .25s;
+}
+.tech-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.tech-card h5 { color: #fff; margin-bottom: 1rem; }
+.tech-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+.tag {
+    background: rgba(45, 212, 191, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(45, 212, 191, 0.3);
+    border-radius: 20px;
+    padding: .35rem 1rem;
+    font-size: .9rem;
+    transition: background .2s;
+}
+.tag:hover { background: rgba(45, 212, 191, 0.25); }
+
+/* ===== Proyectos ===== */
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform .25s, box-shadow .25s;
+}
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(45, 212, 191, 0.12);
+}
+.project-icon {
+    background: linear-gradient(135deg, #1a2230, #0d1117);
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--accent);
+    border-bottom: 1px solid #30363d;
+}
+.project-card .card-body { padding: 1.5rem; }
+.project-card h5 { color: #fff; }
+.project-card p { color: var(--text-muted); font-size: .95rem; }
+.project-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1rem; }
+.project-tags span {
+    background: #21262d;
+    color: #c9d1d9;
+    border-radius: 15px;
+    padding: .2rem .7rem;
+    font-size: .78rem;
+}
+.project-links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: .9rem;
+}
+.project-links a:hover { text-decoration: underline; }
+
+/* ===== Contacto ===== */
+.contact-form .form-label { color: #c9d1d9; }
+.contact-form .form-control {
+    background: var(--bg-card);
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: .75rem 1rem;
+}
+.contact-form .form-control:focus {
+    background: var(--bg-card);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 .2rem rgba(45, 212, 191, .15);
+    color: #fff;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: var(--bg-dark);
+    border-top: 1px solid #21262d;
+}
+.social-link {
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    margin: 0 .8rem;
+    transition: color .2s;
+}
+.social-link:hover { color: var(--accent); }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .section { padding: 70px 0; }
+    .section-title { font-size: 1.7rem; }
+    .hero { text-align: center; }
+}
+/* ===== Logos en tags de tecnologías ===== */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+}
+.tag img {
+    width: 18px;
+    height: 18px;
+}
+.tag-icon {
+    font-size: 1rem;
+    color: var(--accent);
+}

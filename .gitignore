@@ -1,0 +1,29 @@
+# ===== Dependencias de Composer =====
+/vendor/
+composer.phar
+
+# ===== Variables de entorno (NUNCA subir credenciales) =====
+/.env
+
+# ===== Base de datos local =====
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== Logs y archivos temporales =====
+*.log
+*.tmp
+*.cache
+/logs/
+
+# ===== SO y editores =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== XAMPP / entorno local =====
+.htaccess.local
