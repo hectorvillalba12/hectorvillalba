@@ -206,7 +206,7 @@
                         </div>
                     <?php endif; ?>
 
-                    <form action="/api/contact.php" method="POST" class="contact-form" id="contactForm" novalidate>
+                    <form action="/dev/contact.php" method="POST" class="contact-form" id="contactForm" novalidate>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label">Nombre *</label>
