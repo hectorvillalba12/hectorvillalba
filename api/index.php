@@ -61,8 +61,9 @@
                         <pre><code>{
   "backend":  ["FastAPI", "Django", "PHP"],
   "data":     ["Python", "SQL"],
-  "devops":   ["Docker", "Linux"],
-  "frontend": ["JS", "Bootstrap"]
+  "devops":   ["Docker", "Linux","Postman"],
+  "frontend": ["JS", "Bootstrap",HTML,CSS],
+  "CI/CD": ["Git", "GitHub"]
 }</code></pre>
                     </div>
                 </div>
@@ -141,12 +142,13 @@
                 </div>
                 <div class="col-md-4">
                     <div class="tech-card">
-                        <h5><i class="bi bi-terminal text-accent"></i> DevOps & Sistemas</h5>
+                        <h5><i class="bi bi-terminal text-accent"></i> DevOps & CI/CD</h5>
                         <div class="tech-tags">
                             <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"> Linux</span>
                             <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker"> Docker</span>
                             <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"> Git</span>
                             <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"> GitHub</span>
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman">Postman</span>
                         </div>
                     </div>
                 </div>
@@ -155,7 +157,7 @@
                         <h5><i class="bi bi-bar-chart text-accent"></i> Análisis de Datos</h5>
                         <div class="tech-tags">
                             <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"> Python</span>
-                            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas"> Pandas</span>
+                            
                             
                             
                         </div>
